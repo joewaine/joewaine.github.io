@@ -1,0 +1,103 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+
+
+  <style>
+  body{
+  padding: 100px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#32ff5f+0,fcf128+31,2989d8+50,63e224+51,ff282c+80,7db9e8+100 */
+background: #32ff5f; /* Old browsers */
+background: -moz-linear-gradient(top,  #32ff5f 0%, #fcf128 31%, #2989d8 50%, #63e224 51%, #ff282c 80%, #7db9e8 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #32ff5f 0%,#fcf128 31%,#2989d8 50%,#63e224 51%,#ff282c 80%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #32ff5f 0%,#fcf128 31%,#2989d8 50%,#63e224 51%,#ff282c 80%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#32ff5f', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+
+  }
+
+  </style>
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+
+
+<h1>HOV sum of series calculator</h1>
+
+  <form>
+    <input class="target" type="text" placeholder="enter number here">
+  </form>
+
+<br>
+amount earned:
+<br>
+  <div class="amount">
+
+
+  </div>
+
+
+
+  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+
+
+<script>
+
+$( ".target" ).on("change paste keyup", function() {
+
+
+let amountEarned = 0;
+
+for(i=1;i<1 + parseInt($(this).val());i++){
+
+
+
+amountEarned = amountEarned + i
+
+
+}
+
+
+    $('.amount').html(amountEarned);
+
+
+
+
+
+
+});
+
+</script>
+
+</body>
+
+</html>
