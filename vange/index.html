@@ -1,0 +1,131 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+
+
+  <style type="text/css">
+
+
+body{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#70ff7e+0,70ffeb+23,30ff86+50,edff30+75,ffafdc+100 */
+background: #70ff7e; /* Old browsers */
+background: -moz-linear-gradient(top,  #70ff7e 0%, #70ffeb 23%, #30ff86 50%, #edff30 75%, #ffafdc 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #70ff7e 0%,#70ffeb 23%,#30ff86 50%,#edff30 75%,#ffafdc 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #70ff7e 0%,#70ffeb 23%,#30ff86 50%,#edff30 75%,#ffafdc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#70ff7e', endColorstr='#ffafdc',GradientType=0 ); /* IE6-9 */
+
+
+
+	line-height: 2em;}
+
+
+.verylong {
+  height: 5000px;
+}
+
+svg {
+
+  position: fixed;
+    width: 100%;
+    height: 100%;
+}
+  </style>
+</head>
+
+<body class="">
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+  
+
+  
+
+
+  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+  viewBox="0 0 120 120" style="enable-background:new 0 0 120 120;" xml:space="preserve">
+<style type="text/css">
+ .st0{fill:#FF0000;}
+ .st1{fill:none;stroke:#ffffff;stroke-width:2;}
+</style>
+
+<path id="theMotionPath" class="st1" d="M4.9,113.1c0,0,2.8-15.6,6.6-15.3S21,91.4,22,89c1-2.5,5.4-7.7,6.6-6.8
+ c1.3,0.8,5.4,2.5,6.5-1.4s4.5-5.3,5.2-4.7c0.8,0.6,13.8-5.1,14.8-8.4c1-3.3-6.6-8.8,4.9-15.9s23-7.9,23.5-14c0.5-6-0.5-9.9,2.8-10.1
+ c3.3-0.3,21.7-1.1,21.5-8.5s2.8-13.1,7.2-12"/>
+ <circle id="dot" class="st0" cx="0" cy="0" r="5"/>
+
+</svg>
+
+
+  
+  
+
+
+<div class="verylong">
+</div>
+  
+  
+  
+  
+  
+  <script src="js/vendor/modernizr-3.8.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+
+  <script type="text/javascript">
+
+function positionTheDot() {
+
+// What percentage down the page are we? 
+var scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+
+// Get path length
+var path = document.getElementById("theMotionPath");
+var pathLen = path.getTotalLength();
+
+// Get the position of a point at <scrollPercentage> along the path.
+var pt = path.getPointAtLength(scrollPercentage * pathLen);
+
+// Position the red dot at this point
+var dot = document.getElementById("dot");
+dot.setAttribute("transform", "translate("+ pt.x + "," + pt.y + ")");
+
+};
+
+// Update dot position when we get a scroll event.
+window.addEventListener("scroll", positionTheDot);
+
+// Set the initial position of the dot.
+positionTheDot();
+    </script>
+
+
+
+
+</body>
+
+</html>
