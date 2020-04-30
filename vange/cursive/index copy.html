@@ -47,20 +47,18 @@ svg {
 
 .path {
   stroke-dasharray: 1000;
-  /* stroke-dashoffset: 1000; */
-
-  /* stroke-dashoffset: 0; */
-  /* animation: dash 5s linear alternate infinite; */
+  stroke-dashoffset: 1000;
+  animation: dash 5s linear alternate infinite;
 }
 
-/* @keyframes dash {
+@keyframes dash {
   from {
     stroke-dashoffset: 1000;
   }
   to {
     stroke-dashoffset: 0;
   }
-} */
+}
 
   </style>
 </head>
@@ -112,7 +110,7 @@ svg {
 	c0.4-0.7,2.9-2.5,2.9,1c0.1,3.5-0.2,4.6,1.1,4s2.3,1,3.9-5.3c0,0,0.3-1.7,2.2-0.6c1.9,1.1-4.2-2.3-3.8,2.1c0.4,4.5,3.1,0.8,3.5,0.1
 	c0.4-0.7,0.5-3.3,0.7-3.2c0.1,0.1,0.5,4.4,0.7,4.8s2.3,16.7-4.8,12.8c-7.1-3.9,6.6-13.4,8.1-14.2c1.5-0.8,3.7-2.3,2.8-3.5
 	c-0.9-1.3-3.6,2.5-2,4.3c1.6,1.8,10.7,0.8,11.9-1.4"/>
-  <!-- <circle id="dot" class="st1" cx="0" cy="0" r="1"/> -->
+  <circle id="dot" class="st1" cx="0" cy="0" r="1"/>
 </svg>
 
 
@@ -147,24 +145,16 @@ function positionTheDot() {
 // What percentage down the page are we? 
 var scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
 
-
-
-var negprog = 1.0-scrollPercentage;
-
-var corprog = negprog * 1000
-
 // Get path length
 var path = document.getElementById("theMotionPath");
-path.setAttribute('stroke-dashoffset', corprog);
-
 var pathLen = path.getTotalLength();
 
 // Get the position of a point at <scrollPercentage> along the path.
 var pt = path.getPointAtLength(scrollPercentage * pathLen);
 
-// // Position the red dot at this point
-// var dot = document.getElementById("dot");
-// dot.setAttribute("transform", "translate("+ pt.x + "," + pt.y + ")");
+// Position the red dot at this point
+var dot = document.getElementById("dot");
+dot.setAttribute("transform", "translate("+ pt.x + "," + pt.y + ")");
 
 };
 
