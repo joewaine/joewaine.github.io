@@ -38,8 +38,10 @@ var frames1 = 0;
 
 function AnimateBaseFrequency1() {
   //baseFrequency="0.01 .1"
-  bfx = .1;
-  bfy = .8;
+  bfx = 1;
+  bfy = .05;
+  bfx = 0.01;
+  bfy = .21;
   // bfy = scrollPercentage/100;
   frames1 += .25
   // frames1 += scrollPercentage;
