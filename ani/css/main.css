@@ -268,6 +268,15 @@ body {
   min-height: 100vh;
 
 background: green;
+zoom: 2;
+}
+
+body#joe {
+  /* background: linear-gradient(-35deg, #2aa4d5, #030633); */
+  min-height: 100vh;
+
+background: green;
+zoom: 2.2;
 }
 
 div {
@@ -275,8 +284,12 @@ div {
   height: 500px;
   overflow: hidden;
   /* box-shadow: 0 0 150px #031f40; */
-  margin: 1em auto;
-  margin: calc(50vh - 250px) auto;
+  /* margin: 1em auto; */
+
+  /* margin: 0 auto; */
+
+  margin-left:5px;
+  /* margin: calc(50vh - 250px) auto; */
 }
 
 svg {
@@ -285,4 +298,26 @@ svg {
   left: 0;
   width: 100%;
   height: 100vh;
+}
+
+
+
+svg#ronan{
+  position: absolute;
+  /* left: 0; */
+  width: 100%;
+  right: -210px;
+  height: 100vh;
+  top: -130px;
+  left: auto;
+
+}
+.topCover{
+  position: absolute;
+  z-index:100;
+  color:blue;
+}
+
+p{
+  zoom:.5
 }

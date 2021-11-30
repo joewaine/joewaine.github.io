@@ -1,1 +1,32 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1270.84 1746.4"><defs><style>.cls-1{fill:#0013ff;}</style></defs><title>Asset 1</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_2-2" data-name="Layer 2"><circle class="cls-1" cx="362.84" cy="343" r="343"/><circle class="cls-1" cx="861.84" cy="165" r="165"/><circle class="cls-1" cx="973.34" cy="627.5" r="297.5"/><circle class="cls-1" cx="451.84" cy="1047" r="343"/><circle class="cls-1" cx="1030.82" cy="1173.03" r="216.97"/><circle class="cls-1" cx="771.5" cy="1390.97" r="108.54"/><circle class="cls-1" cx="108.54" cy="735.93" r="108.54"/><circle class="cls-1" cx="532.2" cy="1576.97" r="169.43"/><circle class="cls-1" cx="1015.34" cy="1576.5" r="135.5"/></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1270.84 1746.4"><defs>
+
+
+
+    <linearGradient id="Gradient1">
+        <stop class="stop1" offset="0%"/>
+        <stop class="stop2" offset="50%"/>
+        <stop class="stop3" offset="100%"/>
+      </linearGradient>
+      <linearGradient id="Gradient2" x1="0" x2="0" y1="0" y2="1">
+        <stop offset="0%" stop-color="pink"/>
+        <stop offset="50%" stop-color="blue" stop-opacity="1"/>
+        <stop offset="100%" stop-color="yellow"/>
+      </linearGradient>
+      <style type="text/css">
+        .cls1 { fill: url(#Gradient1); }
+        .stop1 { stop-color: pink; }
+        .stop2 { stop-color: black; stop-opacity: 0; }
+        .stop3 { stop-color: yellow; }
+    </style>
+
+<!-- <style>.cls-1{fill:#0013ff;}</style> -->
+
+
+
+
+</defs><title>Asset 1</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_2-2" data-name="Layer 2"><circle fill="url(#Gradient2)" cx="362.84" cy="343" r="343"/><circle fill="url(#Gradient2)" cx="861.84" cy="165" r="165"/><circle fill="url(#Gradient2)" cx="973.34" cy="627.5" r="297.5"/><circle fill="url(#Gradient2)" cx="451.84" cy="1047" r="343"/><circle fill="url(#Gradient2)" cx="1030.82" cy="1173.03" r="216.97"/><circle fill="url(#Gradient2)" cx="771.5" cy="1390.97" r="108.54"/><circle fill="url(#Gradient2)" cx="108.54" cy="735.93" r="108.54"/><circle fill="url(#Gradient2)" cx="532.2" cy="1576.97" r="169.43"/><circle fill="url(#Gradient2)" cx="1015.34" cy="1576.5" r="135.5"/></g></g></svg>
+
+
+<!--
+
+<g id="Layer_2" data-name="Layer 2"><g id="Layer_2-2" data-name="Layer 2"><circle class="cls-1" cx="362.84" cy="343" r="343"/><circle class="cls-1" cx="861.84" cy="165" r="165"/><circle class="cls-1" cx="973.34" cy="627.5" r="297.5"/><circle class="cls-1" cx="451.84" cy="1047" r="343"/><circle class="cls-1" cx="1030.82" cy="1173.03" r="216.97"/><circle class="cls-1" cx="771.5" cy="1390.97" r="108.54"/><circle class="cls-1" cx="108.54" cy="735.93" r="108.54"/><circle class="cls-1" cx="532.2" cy="1576.97" r="169.43"/><circle class="cls-1" cx="1015.34" cy="1576.5" r="135.5"/></g></g></svg>-->
