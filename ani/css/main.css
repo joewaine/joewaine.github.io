@@ -279,6 +279,32 @@ background: green;
 zoom: 2.2;
 }
 
+body#joe2 {
+  /* background: linear-gradient(-35deg, #2aa4d5, #030633); */
+  min-height: 100vh;
+
+background: red;
+zoom: 2.2;
+}
+
+
+body#joe3 {
+  /* background: linear-gradient(-35deg, #2aa4d5, #030633); */
+  min-height: 100vh;
+
+background: #fff;
+zoom: 2.2;
+}
+
+body#joe5 {
+  /* background: linear-gradient(-35deg, #2aa4d5, #030633); */
+  min-height: 100vh;
+
+background: #1d7e44;
+zoom: 2.2;
+}
+
+
 div {
   width: 370px;
   height: 500px;
