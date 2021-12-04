@@ -24,7 +24,7 @@ console.log(document.getElementById('bfx').value);
 console.log(document.getElementById('bfy').value);
 
 console.log(document.getElementById('seed').value);
-  bfx = 0.01 * document.getElementById('bfx').value;
+  bfx = 0.01 * document.getElementById('bfx').value/10;
   bfy = .01 * document.getElementById('bfy').value /10;
 seed = document.getElementById('seed').value;
 
