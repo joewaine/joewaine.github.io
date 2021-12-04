@@ -296,6 +296,15 @@ background: #fff;
 zoom: 2.2;
 }
 
+
+body#sliders {
+  /* background: linear-gradient(-35deg, #2aa4d5, #030633); */
+  min-height: 100vh;
+
+background: #333;
+zoom: 2.2;
+}
+
 body#joe5 {
   /* background: linear-gradient(-35deg, #2aa4d5, #030633); */
   min-height: 100vh;

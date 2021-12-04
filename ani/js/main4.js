@@ -36,26 +36,63 @@ var img1 = document.querySelector("#displacementFilter feTurbulence");
 var frames1 = 0;
 
 
+
+
+
+
+
 function AnimateBaseFrequency1() {
-  //baseFrequency="0.01 .1"
-  bfx = 1;
-  bfy = .05;
-  bfx = 0.01;
-  bfy = .21;
-  // bfy = scrollPercentage/100;
-  frames1 += .25
-  // frames1 += scrollPercentage;
-  console.log('frames ' + frames1)
-  bfx += 0.001 * Math.cos(frames1 * rad);
-  bfy += 0.005 * Math.sin(frames1 * rad);
 
+
+
+  bfx = 0.01 * document.getElementById('bfx').value;
+  bfy = .01 * document.getElementById('bfy').value;
+
+let scale = scrollPercentage *1000;
+  let numOctaves = 1
   bf = bfx.toString() + ' ' + bfy.toString();
-  img1.setAttributeNS(null, 'baseFrequency', bf);
 
+  img1.setAttributeNS(null, 'scale', scale)
   window.requestAnimationFrame(AnimateBaseFrequency1);
 }
 
 window.requestAnimationFrame(AnimateBaseFrequency1);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function AnimateBaseFrequency1() {
+//   //baseFrequency="0.01 .1"
+//   bfx = 1;
+//   bfy = .05;
+//   bfx = 0.01;
+//   bfy = .21;
+//   // bfy = scrollPercentage/100;
+//   frames1 += .25
+//   // frames1 += scrollPercentage;
+//   console.log('frames ' + frames1)
+//   bfx += 0.001 * Math.cos(frames1 * rad);
+//   bfy += 0.005 * Math.sin(frames1 * rad);
+
+//   bf = bfx.toString() + ' ' + bfy.toString();
+//   img1.setAttributeNS(null, 'baseFrequency', bf);
+
+//   window.requestAnimationFrame(AnimateBaseFrequency1);
+// }
+
+// window.requestAnimationFrame(AnimateBaseFrequency1);
 
 
 // two
@@ -72,7 +109,7 @@ function AnimateBaseFrequency2() {
   frames2 += .25
   // frames2 += scrollPercentage;
 //   frames += scrollPercentage;
-  console.log('frames ' + frames)
+  // console.log('frames ' + frames)
   bfx += 0.001 * Math.cos(frames2 * rad);
   bfy += 0.005 * Math.sin(frames2* rad);
 
@@ -107,7 +144,7 @@ function AnimateBaseFrequency3() {
   frames3 += .25
   // frames3 += scrollPercentage;
 //   frames += scrollPercentage;
-  console.log('frames ' + frames)
+  // console.log('frames ' + frames)
   bfx += 0.001 * Math.cos(frames3 * rad);
   bfy += 0.005 * Math.sin(frames3 * rad);
 
@@ -143,7 +180,7 @@ function AnimateBaseFrequency4() {
   frames4 += .25
   // frames3 += scrollPercentage;
 //   frames += scrollPercentage;
-  console.log('frames ' + frames)
+  // console.log('frames ' + frames)
   bfx += 0.001 * Math.cos(frames3 * rad);
   bfy += 0.005 * Math.sin(frames3 * rad);
 
